@@ -1,0 +1,104 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  max-width: 960px;
+}
+
+ul li {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: rgb(255, 255, 255);
+  margin: 0 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  padding: 15px 10px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li p {
+  width: 100%;
+  transition: .3s;
+  padding: 5px 10px;
+}
+
+li p:hover {
+  background: rgba(128, 128, 128, 0.361);
+}
+
+li .img-container {
+  min-height: 200px;
+}
+
+li .img-container img {
+  max-width: 100%;
+  max-height: 200px;
+  user-select: none;
+}
+
+li .actions {
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+li .actions svg {
+  width: 35px;
+  height: 20px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+li .actions svg:hover {
+  transform: scale(1.05);
+}
+
+li .actions svg:active {
+  transform: scale(0.95);
+}
+
+li .actions svg path {
+  stroke-width: 2px;
+  stroke: black;
+  fill: black;
+}
+
+li .actions svg path{
+  transition: .3s;
+}
+
+li .actions .heart.active path {
+  stroke: red;
+  fill: red;
+}
+
+li .actions .scales.active svg path {
+  fill: grey;
+  stroke: grey;
+}
+
+li .product-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+li .price {
+  color: green;
+  font-size: 15px;
+}
+
+.err-msg {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 100px;
+}
