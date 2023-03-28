@@ -1,0 +1,38 @@
+.products-nav {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 50px auto;
+  color: black;
+  justify-content: space-evenly;
+}
+
+.products-nav li {
+  padding: 20px;
+  border: 4px black solid;
+  border-radius: 10px;
+  background: white;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.products-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.products-nav a.active {
+  color: #83760e;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.products-nav a.active li {
+  transform: scale(1.1);
+}
+
+.products-nav li:hover {
+  transform: scale(1.1);
+}

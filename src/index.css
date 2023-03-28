@@ -1,13 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  background: url(https://i.pinimg.com/originals/5d/d9/2c/5dd92c04aa5851fbfbf44d08bfbeb090.jpg) no-repeat center/cover;
+  background-attachment: fixed;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.322);
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+  transition: .3s;
+}
+
+.preloader span {
+  position: fixed;
+  font-size: 60px;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%);
 }
